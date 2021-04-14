@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
-    <title>STARTER PACK</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Email Sender</title>
 </head>
 <body>
-    <h1>FAST START</h1>
+    <section class="form">
+        <div class="container">
+            <div class="form-wrapper">
+                <form id="sender-form" class="sender-form" action="#">
+                    <div class="title">Form Sender Testing</div>
+                    <input id="name" name="name" required placeholder="Name" type="text">
+                    <label for="name"></label>
+                    <input id="email" name="email" required placeholder="Email" type="email">
+                    <label for="email"></label>
+                    <input id="phone" name="phone" required placeholder="Phone" >
+                    <label for="phone"></label>
+                    <textarea id="message" name="message" required type="text" placeholder="Message here" id="formMessage"></textarea>
+                    <label for="message"></label>
+                    <div class="contacts__policy">
+                        <input name="checkbox" required type="checkbox" >
+                        <span>I agree with <a href="#">privacy rules</a></span>
+                    </div>
+                    <button class="button button_submit">Submit</button>
+                    <input type="reset">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="overlay">
+        <div class="modal modal__mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">The form has been sent succesfuly</div>
+            <div class="modal__descr">Now check your email box</div>
+        </div>
+    </div>
+    <!-- SCRIPTS IMPORTANT / JQUERY  -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
